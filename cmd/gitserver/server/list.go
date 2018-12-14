@@ -24,6 +24,7 @@ var (
 )
 
 func init() {
+	println("DOES NOTHING")
 	conf.Watch(func() {
 		newBlacklists := make(map[string]*regexp.Regexp)
 		for _, gconf := range conf.Get().Gitolite {
